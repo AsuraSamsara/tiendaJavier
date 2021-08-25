@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  color: white;
+  font-family: monospace, serif;
+}
+
+body {
+  /* background: rgb(3,26,107); */
+  background: linear-gradient(rgba(0, 67, 133), rgba(5, 178, 220, 1));
+  background-attachment: fixed;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(0, 67, 133);
+  color: white;
+}
+
+.navbar-img {
+  height: 5rem;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+.navbar-plegable {
+  display: none;
+  position: absolute;
+  margin: 0 0 0 -3.4rem;
+}
+
+.navbar-menu {
+  margin: 0 5rem 0 0;
+  cursor: pointer;
+}
+
+.navbar-menu i{
+    font-size: 1.5rem;
+}
+.navbar-menu:hover .navbar-plegable {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-plegable a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.navbar-menu:hover .navbar-plegable a:hover {
+  color: blue;
+  background: rgb(5, 178, 220, 0.6);
+}
+
+.navbar-items a:visited {
+  color: white;
+}
+
+.navbar-items li {
+  list-style: none;
+}
