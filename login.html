@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/all.min.css">
-    <link rel="stylesheet" href="./css/styleGlobal.css">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/styleGlobal.css" />
+    <link rel="stylesheet" href="./css/styleLogin.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar">
-        <a href="./index.html">
-          <img class="navbar-img" src="./image/LogoTiendaDeJavier.png" />
-        </a>
-  
-        <ul class="navbar-items">
-          <li class="navbar-menu">
-            <i class="fas fa-bars"></i>
-  
-            <ul class="navbar-plegable">
-              <li>
-                <a href="">Inicia Sesion</a>
-              </li>
-              <li>
-                <a href="">Productos</a>
-              </li>
-              <li>
-                <a href="">Contacto</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-</body>
+      <a href="./index.html">
+        <img class="navbar-img" src="./image/LogoTiendaDeJavier.png" />
+      </a>
+
+      <ul class="navbar-items">
+        <li class="navbar-menu">
+          <i class="fas fa-bars"></i>
+
+          <ul class="navbar-plegable">
+            <li>
+              <a href="">Inicia Sesion</a>
+            </li>
+            <li>
+              <a href="">Productos</a>
+            </li>
+            <li>
+              <a href="">Contacto</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="login">
+      <h2>Inicio de Sesion</h2>
+      <div class="login__container">
+        <form id="login__container--form" class="login__container--form">
+          <input
+            id="login_email"
+            type="email"
+            class="login__container--input"
+            placeholder="Correo Electronico"
+            autocomplete="email"
+          />
+          <input
+            id="login-pass"
+            type="password"
+            class="login__container--input"
+            placeholder="Contraseña"
+            autocomplete="password"
+          />
+          <input
+            type="submit"
+            class="login__container--submit"
+            value="Iniciar Sesion"
+          />
+          <div class="login__container--remember">
+            <label for=""><input type="checkbox" /> Recuerdame</label>
+            <a href="">Olvide mi Contraseña</a>
+          </div>
+        </form>
+
+        <section class="login__container--social">
+          <a href=""><i class="fab fa-google"></i>Inicia Sesion con Google</a>
+          <a href=""><i class="fab fa-twitter"></i>Inicia Sesion Con Twitter</a>
+        </section>
+        <section class="login__container--register">
+          <label>¿Aun no tienes cuenta? <a href="">Registrate</a></label>
+        </section>
+      </div>
+    </section>
+  </body>
 </html>
