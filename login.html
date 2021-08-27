@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/all.min.css" />
@@ -17,11 +17,12 @@
 
       <ul class="navbar-items">
         <li class="navbar-menu">
-          <i class="fas fa-bars"></i>
-
-          <ul class="navbar-plegable">
+          <a href="javascript:void(0);" onclick="Menu()" class="navbar--open">
+            <i class="fas fa-bars"></i>
+          </a>
+          <ul class="navbar-plegable" id="navbar-plegable">
             <li>
-              <a href="">Inicia Sesion</a>
+              <a href="./login.html">Inicia Sesion</a>
             </li>
             <li>
               <a href="">Productos</a>
@@ -33,6 +34,17 @@
         </li>
       </ul>
     </nav>
+
+    <script>
+      function Menu() {
+        var x = document.getElementById("navbar-plegable");
+        if (x.className === "navbar-plegable") {
+          x.className += " navbar-plegable--open";
+        } else {
+          x.className = "navbar-plegable";
+        }
+      }
+      </script>
 
     <section class="login">
       <h2>Inicio de Sesion</h2>
@@ -68,9 +80,16 @@
           <a href=""><i class="fab fa-twitter"></i>Inicia Sesion Con Twitter</a>
         </section>
         <section class="login__container--register">
-          <label>¿Aun no tienes cuenta? <a href="">Registrate</a></label>
+          <label>¿Aun no tienes cuenta? <a href="./register.html">Registrate</a></label>
         </section>
       </div>
     </section>
+
+    <footer class="footer__container">
+      <a class="footer--item" href="">Terminos y Condiciones</a>
+      <a class="footer--item" href="">Declaracion de Privacidad</a>
+      <a class="footer--item" href="">Centro de Ayuda</a>
+      <a class="footer--item" href="">Preguntas Frecuentes</a>
+    </footer>
   </body>
 </html>

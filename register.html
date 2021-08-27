@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styleGlobal.css" />
-    <link rel="stylesheet" href="./css/styleIndex.css" />
+    <link rel="stylesheet" href="./css/styleGlobal.css" />
+    <link rel="stylesheet" href="./css/styleRegister.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -46,36 +46,25 @@
       }
       </script>
 
-    <section class="buscador">
-      <div class="buscador__container">
-        <form class="buscador__container--form">
-          <h2>¿Buscabas algun producto?</h2>
-          <input type="text" class="buscador__container--input" />
-          <input type="button" class="buscador__container--btn" value="🔎" />
-        </form>
-      </div>
-    </section>
+    <section class="register">
+      <div class="register__container">
+        REGISTRAR
+        <form class="register--form">
+           <input class="register--input" type="email" placeholder="Correo Electronico" />
+          <input class="register--input" type="password" placeholder="Contraseña"/>
+          <input class="register--input" type="password" placeholder="Confirma Contraseña" />
+          <label>Pregunta secreta</label>
+          <select class="register--input" name="opciones" placeholder="Pregunta Secreta">
+            <option value="">¿Donde naciste?</option>
+            <option value="">¿Como se llamaba tu primer mascota?</option>
+          </select>
+          <input class="register--input" type="password" placeholder="Respuesta Secreta" />
+          <div class="register--terminos">
+            <input type="checkbox"><label>Acepto terminos y condiciones</label>
 
-    <section class="carrusel">
-      <div class="carrusel-container">
-        <div class="carrusel-container--item">
-          <img class="carrusel-container--img" src="./image/tazaAnime.jpg" />
-          <div class="carrusel-container--details">
-            <p>Tazas de Anime</p>
           </div>
-        </div>
-        <div class="carrusel-container--item">
-          <img class="carrusel-container--img" src="./image/tazaComic.jpg" />
-          <div class="carrusel-container--details">
-            <p>Tazas de Comics</p>
-          </div>
-        </div>
-        <div class="carrusel-container--item">
-          <img class="carrusel-container--img" src="./image/tazaGlitter.jpg" />
-          <div class="carrusel-container--details">
-            <p>Tazas Glitters</p>
-          </div>
-        </div>
+          <input class="register--submit" type="submit" value="Registrar">
+        </form>
       </div>
     </section>
 

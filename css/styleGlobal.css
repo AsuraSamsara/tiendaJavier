@@ -27,23 +27,14 @@ body {
   display: flex;
   align-items: center;
 }
-.navbar-plegable {
+
+.navbar--open {
   display: none;
-  position: absolute;
-  margin: 0 0 0 -3.4rem;
 }
 
-.navbar-menu {
-  margin: 0 5rem 0 0;
-  cursor: pointer;
-}
-
-.navbar-menu i{
-    font-size: 1.5rem;
-}
-.navbar-menu:hover .navbar-plegable {
+.navbar-plegable {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
@@ -56,7 +47,7 @@ body {
   text-align: center;
 }
 
-.navbar-menu:hover .navbar-plegable a:hover {
+.navbar-plegable a:hover {
   color: blue;
   background: rgb(5, 178, 220, 0.6);
 }
@@ -67,4 +58,96 @@ body {
 
 .navbar-items li {
   list-style: none;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+}
+
+.footer--item {
+  margin: 0 1rem 0 0;
+  text-decoration: none;
+}
+
+.footer--item:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 544px) {
+  .navbar {
+    z-index: 1;
+  }
+
+  .navbar-plegable {
+    display: none;
+    margin: 0;
+  }
+
+  .navbar--open {
+    margin: 0 2rem 0 0;
+    cursor: pointer;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+/*   .navbar-menu:hover .navbar--open {
+    visibility: 0;
+    pointer-events: none;
+  }  */
+/* 
+  .navbar--open:hover ~ .navbar--close,
+  .navbar-menu:hover .navbar--close {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background:rgb(0, 67, 133);
+  }
+
+  .navbar--open:hover{
+    opacity: 0;
+    pointer-events: none;
+
+  }
+
+
+  .navbar--close:hover ~ .navbar-plegable {
+    display: none;
+  } */
+
+.navbar-plegable--open {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    background: black;
+    height: calc(100% - 5rem);
+    overflow: scroll;
+    z-index: 100;
+    position: absolute;
+  }
+
+  .navbar-plegable a {
+    padding: 1.5rem;
+    border: solid 1px white;
+  }
+
+  .navbar-items li {
+    width: 100%;
+  }
+
+  .footer__container {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .footer--item:hover {
+    text-decoration: underline;
+  }
 }
