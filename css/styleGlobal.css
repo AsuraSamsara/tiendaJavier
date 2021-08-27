@@ -126,7 +126,7 @@ body {
     top: 5rem;
     left: 0;
     width: 100%;
-    background: black;
+    background: linear-gradient(to top , #031A6B,#004385);
     height: calc(100% - 5rem);
     overflow: scroll;
     z-index: 100;
