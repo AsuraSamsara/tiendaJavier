@@ -12,7 +12,7 @@
   <body>
     <nav class="navbar">
       <a href="./index.html">
-        <img class="navbar-img" src="./image/LogoTiendaDeJavier.png" />
+        <img class="navbar-img" src="./image/LogoTiendaDeJavier.png" alt="logoTienda" />
       </a>
 
       <ul class="navbar-items">
@@ -21,7 +21,10 @@
             <i class="fas fa-bars"></i>
           </a>
           <ul class="navbar-plegable" id="navbar-plegable">
-            <li>
+            <li >
+              <a href="./index.html">Inicio</a>
+            </li>
+            <li class="navbar--active">
               <a href="./login.html">Inicia Sesion</a>
             </li>
             <li>
@@ -62,7 +65,6 @@
             type="password"
             class="login__container--input"
             placeholder="Contraseña"
-            autocomplete="password"
           />
           <input
             type="submit"
@@ -70,7 +72,7 @@
             value="Iniciar Sesion"
           />
           <div class="login__container--remember">
-            <label for=""><input type="checkbox" /> Recuerdame</label>
+            <label for="remember"><input id="remember" type="checkbox" /> Recuerdame</label>
             <a href="">Olvide mi Contraseña</a>
           </div>
         </form>
